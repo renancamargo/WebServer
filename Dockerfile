@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
 ENV TZ=America/Sao_Paulo
 
@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y \
 cron \
 lynx-cur
 
-CMD ["cron && tail -f /var/log/cron.log"]
+CMD cron && tail -f /var/log/cron.log
