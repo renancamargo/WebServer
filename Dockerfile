@@ -9,6 +9,6 @@ RUN touch /var/log/cron.log
 RUN apt-get update && apt-get install -y \
 cron \
 lynx-cur \
-vi
+nano
 
 CMD cron && tail -f /var/log/cron.log
