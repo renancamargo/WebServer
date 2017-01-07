@@ -1,1 +1,1 @@
-# Docker PHP + mysqli
+# Docker PHP + Apache + mysqli
