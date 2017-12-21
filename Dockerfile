@@ -11,6 +11,6 @@ RUN \
     docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
     docker-php-ext-install ldap
 
-RUN a2enmod rewrite expires
+# RUN a2enmod rewrite expires
 
-CMD ["apache2-foreground"]
+# CMD ["apache2-foreground"]
