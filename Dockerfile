@@ -1,9 +1,9 @@
 FROM php:7.0-apache
 
-# Install needed php extensions: mysql
+# php extensions: mysql
 RUN docker-php-ext-install mysqli
 
-# Install needed php extensions: ldap
+# php extensions: ldap
 RUN \
     apt-get update && \
     apt-get install libldap2-dev -y && \
