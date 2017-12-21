@@ -1,5 +1,6 @@
 FROM php:7.0-apache
 
+# Install needed php extensions: mysql
 RUN docker-php-ext-install mysqli
 
 # Install needed php extensions: ldap
@@ -11,5 +12,7 @@ RUN \
     docker-php-ext-install ldap
 
 RUN a2enmod rewrite expires
+
+WORKDIR var/www/html/
 
 CMD ["apache2-foreground"]
