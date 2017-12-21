@@ -13,6 +13,4 @@ RUN \
 
 RUN a2enmod rewrite expires
 
-WORKDIR var/www/html/
-
 CMD ["apache2-foreground"]
