@@ -4,7 +4,8 @@
 ############################################################
 
 # Set the base image 
-FROM php:7.0-apache
+#FROM php:7.0-apache
+FROM 5.6.39-apache-jessie
 
 # File Author / Maintainer
 MAINTAINER Renan Camargo
