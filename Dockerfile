@@ -1,10 +1,9 @@
 ############################################################
 # Dockerfile to PHP 7
-# Based on Debian jessie
 ############################################################
 
 # Set the base image 
-FROM php:7.0-apache
+FROM php:7.4.9-apache
 #FROM php:5.6.39-apache-jessie
 
 # File Author / Maintainer
