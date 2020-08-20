@@ -4,8 +4,8 @@
 ############################################################
 
 # Set the base image 
-#FROM php:7.0-apache
-FROM php:5.6.39-apache-jessie
+FROM php:7.0-apache
+#FROM php:5.6.39-apache-jessie
 
 # File Author / Maintainer
 MAINTAINER Renan Camargo
@@ -23,3 +23,5 @@ RUN \
 
 # Enable mod rewrite
 RUN a2enmod rewrite
+RUN a2enmod ssl
+RUN service apache2 restart
